@@ -23,6 +23,8 @@ jobs:
         BASE_URL: ${{ secrets.BASE_URL }}
         TEST_USER_BTOC_EMAIL: ${{ secrets.TEST_USER_BTOC_EMAIL }}
         TEST_USER_BTOC_PASSWORD: ${{ secrets.TEST_USER_BTOC_PASSWORD }}
+        TEST_USER_LOCKED_EMAIL: ${{ secrets.TEST_USER_LOCKED_EMAIL }}
+        TEST_USER_LOCKED_PASSWORD: ${{ secrets.TEST_USER_LOCKED_PASSWORD }}
     - uses: actions/upload-artifact@v4
       if: ${{ !cancelled() }}
       with:
