@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../pages/LoginPage';
+import { LoginPage } from '../../../pages/LoginPage';
 
 test('un utilisateur avec un compte bloqué voit un message d\'erreur', async ({ page }) => {
   const loginPage = new LoginPage(page);
