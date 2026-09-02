@@ -1,5 +1,5 @@
 import { test, expect } from '@playwright/test';
-import { LoginPage } from '../../pages/LoginPage';
+import { LoginPage } from '../../../pages/LoginPage';
 
 test('un utilisateur BtoC peut se connecter avec des identifiants valides', async ({ page }) => {
   const loginPage = new LoginPage(page);
